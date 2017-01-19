@@ -3,7 +3,7 @@
 </p>
 
 ## Lab
-Various coding experiments and demos
+Various coding experiments and demos.
 
 ## License
 All demos found in this repo are licensed under the MIT License.
