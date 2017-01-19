@@ -1,6 +1,7 @@
 <p align="center">
   <img src="docs/my_lab.png" alt="myLab">
 </p>
+
 ## Lab
 Various coding experiments and demos
 
