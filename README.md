@@ -1,3 +1,5 @@
+# <img src="docs/my_lab.png" alt="myLab">
+
 ## Lab
 Various coding experiments and demos
 
