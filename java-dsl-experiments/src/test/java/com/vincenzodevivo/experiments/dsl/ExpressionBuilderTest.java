@@ -9,19 +9,21 @@ import static com.vincenzodevivo.experiments.dsl.ExpressionBuilder.Expression;
  */
 public class ExpressionBuilderTest extends TestCase {
     public void test() {
-        String expression = Expression().group()
+        String expression = Expression()
                 .group()
+                    .group()
+                        .string()
+                        .integer()
+                        .value("#value")
+                    .end()
+                    .or()
+                    .group()
+                        .string()
+                    .end()
                     .string()
-                    .integer()
-                    .value("#value")
                 .end()
-                .or()
-                .group()
-                    .string()
-                .end()
-                .string()
                 .toString();
         System.out.println("expression: " + expression);
-        assertEquals("(#string#integer#value)#or(#string)#string", expression);
+        assertEquals("((#string#integer#value)#or(#string)#string)", expression);
     }
 }

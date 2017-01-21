@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by Vincenzo De Vivo on 21/01/2017.
  */
-public class ExpressionBuilder<T extends ExpressionBuilder<T>> {
+public class ExpressionBuilder {
     private List<Expression> subExpressions;
 
     public ExpressionBuilder(List<Expression> subExpressions) {
@@ -17,7 +17,6 @@ public class ExpressionBuilder<T extends ExpressionBuilder<T>> {
         this.subExpressions = new ArrayList<>();
     }
 
-    @SuppressWarnings("unchecked")
     public static ExpressionBuilder Expression() {
         return new ExpressionBuilder();
     }
@@ -26,28 +25,28 @@ public class ExpressionBuilder<T extends ExpressionBuilder<T>> {
         return subExpressions;
     }
 
-    @SuppressWarnings("unchecked")
-    public T string() {
+    public ExpressionBuilder string() {
         subExpressions.add(new Expression("#string"));
-        return (T) this;
+        return this;
     }
 
-    @SuppressWarnings("unchecked")
-    public T integer() {
+
+    public ExpressionBuilder integer() {
         subExpressions.add(new Expression("#integer"));
-        return (T) this;
+        return this;
     }
 
-    @SuppressWarnings("unchecked")
-    public T or() {
+    public ExpressionBuilder or() {
         subExpressions.add(new Expression("#or"));
-        return (T) this;
+        return this;
     }
 
-    @SuppressWarnings("unchecked")
-    public T value(String value) {
+    public ExpressionBuilder value(String value) {
         subExpressions.add(new Expression(value));
-        return (T) this;
+        return this;
+    }
+    public ExpressionBuilder end() {
+        throw new RuntimeException("Cannot call end(), no opening group found!");
     }
 
     public GroupExpressionBuilder group() {

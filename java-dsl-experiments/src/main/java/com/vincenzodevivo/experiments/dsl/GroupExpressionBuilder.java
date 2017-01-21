@@ -3,7 +3,7 @@ package com.vincenzodevivo.experiments.dsl;
 /**
  * Created by Vincenzo De Vivo on 21/01/2017.
  */
-public class GroupExpressionBuilder extends ExpressionBuilder<GroupExpressionBuilder> {
+public class GroupExpressionBuilder extends ExpressionBuilder {
     private final GroupExpression groupExpression;
     private final ExpressionBuilder parent;
 
