@@ -1,0 +1,7 @@
+== To generate this project
+
+mvn archetype:generate -DgroupId=com.vincenzodevivo -DartifactId=maven-experiments-archetype -DarchetypeArtifactId=maven-archetype-archetype
+
+== To execute this archetype
+
+mvn archetype:generate -DarchetypeGroupId=com.vincenzodevivo -DarchetypeArtifactId=maven-experiments-archetype -DarchetypeVersion=1.0-SNAPSHOT -DgroupId=com.vincenzodevivo
