@@ -1,1 +1,1 @@
-# Firefox Webextensions - Apply CSS Experiment
+# Firefox WebExtensions - Apply CSS Experiment
