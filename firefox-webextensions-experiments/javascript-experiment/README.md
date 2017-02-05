@@ -1,0 +1,1 @@
+# Firefox Webextensions - JavaScript Experiment

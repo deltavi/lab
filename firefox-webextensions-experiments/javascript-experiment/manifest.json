@@ -1,0 +1,23 @@
+{
+  "description": "Firefox Webextensions - JavaScript Experiment",
+  "manifest_version": 2,
+  "name": "JavaScript Experiment",
+  "version": "1.0",
+  "homepage_url": "http://www.vincenzodevivo.com",
+  "icons": {
+    "48": "icons/my_lab48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/my_lab32.png",
+    "default_title": "JavaScript Experiment",
+    "default_popup": "popup/menu.html"
+  },
+  "options_ui": {
+    "page": "settings/options.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ]
+}

@@ -1,0 +1,18 @@
+* {
+    margin:0px;
+    padding:0px;
+}
+body {
+   padding:2px;
+   font-family: Verdana,Geneva,sans-serif;
+}
+
+.button {
+  padding: 1px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #99CCFF;
+}
