@@ -24,6 +24,9 @@ function initialize() {
   gettingAllStorageItems.then((results) => {
     allMenuItems = results;
     var scriptNames = Object.keys(results);
+    if (scriptNames.length > 0){
+        menuContainer.innerHTML = "";
+    }
     for(scriptName of scriptNames) {
         var item = document.createElement('div');
         item.textContent = scriptName;
