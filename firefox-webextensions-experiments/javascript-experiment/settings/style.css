@@ -32,17 +32,6 @@ input, textarea, button {
   padding: 4px;
 }
 
-button {
-
-}
-
-button:hover, button:focus {
-
-}
-
-button:active {
-
-}
 
 input, textarea {
   font-family: sans-serif;
@@ -82,30 +71,49 @@ textarea {
   float: left;
 }
 
-.add {
-  float: right;
-}
-
 /* Notes display box(es) */
 
 .note {
   padding: 10px;
   border: 1px solid lightgray;
+  margin-top: 35px;
   margin-bottom: 4px;
 }
 
-.delete {
-  float: right;
-}
+
 
 p {
   margin: 0;
 }
 
-.cancel {
-  float: left;
+.buttonAdd{
+    background: url(icons/add.png);
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    float: right;
 }
 
-.update {
-  float: right;
+.buttonUpdate{
+    background: url(icons/update.png);
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    float: right;
+}
+
+.buttonDelete{
+    background: url(icons/delete.png);
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    float: right;
+}
+
+.buttonCancel{
+    background: url(icons/cancel.png);
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    float: left;
 }

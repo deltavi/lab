@@ -1,7 +1,7 @@
 var menuContainer = document.querySelector('#menu');
 var allMenuItems = null;
-document.addEventListener("click", (e) => {
-  if (e.target.classList.contains("button")) {
+document.addEventListener('click', (e) => {
+  if (e.target.classList.contains('button')) {
     var scriptName = e.target.textContent;
     var scriptContent = allMenuItems[scriptName];
     if(scriptContent) {
@@ -23,9 +23,10 @@ function initialize() {
   var gettingAllStorageItems = browser.storage.local.get(null);
   gettingAllStorageItems.then((results) => {
     allMenuItems = results;
-    var scriptNames = Object.keys(results);
+    //allMenuItems['Make page content editable'] = 'document.getElementsByTagName("html").item(0).contentEditable=true';
+    var scriptNames = Object.keys(allMenuItems);
     if (scriptNames.length > 0){
-        menuContainer.innerHTML = "";
+        menuContainer.innerHTML = '';
     }
     for(scriptName of scriptNames) {
         var item = document.createElement('div');

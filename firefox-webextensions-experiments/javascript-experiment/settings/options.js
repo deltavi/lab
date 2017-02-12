@@ -64,15 +64,15 @@ function displayScript(scriptName, scriptContent) {
   var noteDisplay = document.createElement('div');
   var noteH = document.createElement('h2');
   var notePara = document.createElement('p');
-  var deleteBtn = document.createElement('button');
+  var deleteBtn = document.createElement('div');
   var clearFix = document.createElement('div');
 
   note.setAttribute('class','note');
 
   noteH.textContent = scriptName;
   notePara.textContent = scriptContent;
-  deleteBtn.setAttribute('class','delete');
-  deleteBtn.textContent = 'Delete note';
+  deleteBtn.setAttribute('class','buttonDelete');
+  deleteBtn.setAttribute('title','Delete');
   clearFix.setAttribute('class','clearfix');
 
   noteDisplay.appendChild(noteH);
@@ -96,13 +96,13 @@ function displayScript(scriptName, scriptContent) {
   var noteBodyEdit = document.createElement('textarea');
   var clearFix2 = document.createElement('div');
 
-  var updateBtn = document.createElement('button');
-  var cancelBtn = document.createElement('button');
+  var updateBtn = document.createElement('div');
+  var cancelBtn = document.createElement('div');
 
-  updateBtn.setAttribute('class','update');
-  updateBtn.textContent = 'Update note';
-  cancelBtn.setAttribute('class','cancel');
-  cancelBtn.textContent = 'Cancel update';
+  updateBtn.setAttribute('class','buttonUpdate');
+  updateBtn.setAttribute('title','Update');
+  cancelBtn.setAttribute('class','buttonCancel');
+  cancelBtn.setAttribute('title','Cancel');
 
   noteEdit.appendChild(noteTitleEdit);
   noteTitleEdit.value = scriptName;

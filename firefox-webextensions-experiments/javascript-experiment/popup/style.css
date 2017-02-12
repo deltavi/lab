@@ -1,18 +1,23 @@
 * {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 body {
-   padding:2px;
-   font-family: Verdana,Geneva,sans-serif;
+    padding: 2px;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 12px;
+}
+
+.emptyList {
+    color: gray;
+    text-align: center
 }
 
 .button {
-  padding: 1px;
-  font-size: 12px;
-  cursor: pointer;
+    padding: 1px;
+    cursor: pointer;
 }
 
 .button:hover {
-  background-color: #99CCFF;
+    background-color: #99CCFF;
 }
