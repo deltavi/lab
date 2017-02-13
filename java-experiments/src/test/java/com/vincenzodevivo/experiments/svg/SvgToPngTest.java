@@ -14,7 +14,8 @@ import java.io.IOException;
  * Created by Vincenzo De Vivo on 13/02/2017.
  */
 public class SvgToPngTest {
-    private void convertFile(File input, int width, int height) throws IOException, TranscoderException {
+    private void convertFile(File input, int width) throws IOException, TranscoderException {
+        int height = width;
         System.out.println("Input file: " + input);
         TranscoderInput ti = new TranscoderInput(input.toURI().toString());
         PNGTranscoder t = new PNGTranscoder();
@@ -33,6 +34,6 @@ public class SvgToPngTest {
 
     @Test
     public void test() throws IOException, TranscoderException {
-        convertFile(new File(SvgToPngTest.class.getResource("/svg/__base_btn_circle.svg").getFile()), 32, 32);
+        convertFile(new File(SvgToPngTest.class.getResource("/svg/__base_btn_circle.svg").getFile()), 32);
     }
 }
