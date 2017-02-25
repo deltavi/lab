@@ -12,6 +12,11 @@ document.addEventListener('click', (e) => {
     window.close();
     return;
   }
+   if (e.target.classList.contains('options')) {
+    browser.runtime.openOptionsPage();
+    window.close();
+    return;
+  }
 });
 
 function onError(error) {

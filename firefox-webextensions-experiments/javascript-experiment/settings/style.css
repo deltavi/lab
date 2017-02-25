@@ -48,9 +48,9 @@ p, input, textarea {
   line-height: 1.5;
 }
 
-/* New notes entry box */
+/* New scripts entry box */
 
-.new-note {
+.new-script {
   width: 100%;
   margin-bottom: 5px;
   padding: 2px;
@@ -71,49 +71,76 @@ textarea {
   float: left;
 }
 
-/* Notes display box(es) */
+/* Scripts display box(es) */
 
-.note {
-  padding: 10px;
-  border: 1px solid lightgray;
-  margin-top: 35px;
+.script {
+  border-top: 1px solid lightgray;
+  margin-top: 4px;
   margin-bottom: 4px;
 }
-
-
 
 p {
   margin: 0;
 }
 
+.addBar {
+  height: 24px;
+}
+
 .buttonAdd{
-    background: url(icons/add.png);
+    background: url(icons/btn_circle_plus.24x24.png);
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    height: 24px;
+    width: 24px;
     float: right;
 }
 
 .buttonUpdate{
-    background: url(icons/update.png);
+    background: url(icons/btn_circle_ok.24x24.png);
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    height: 24px;
+    width: 24px;
     float: right;
 }
 
 .buttonDelete{
-    background: url(icons/delete.png);
+    background: url(icons/btn_circle_recycle_bin.24x24.png);
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    height: 24px;
+    width: 24px;
     float: right;
 }
 
-.buttonCancel{
-    background: url(icons/cancel.png);
+.buttonUndo{
+    background: url(icons/btn_circle_undo.24x24.png);
     cursor: pointer;
-    height: 32px;
-    width: 32px;
+    height: 24px;
+    width: 24px;
     float: left;
+}
+
+legend{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.newScriptBody, .newScriptName{
+  font-weight: bold;
+}
+
+.script:hover .editScript{
+    background: url(icons/btn_edit.16x16.png);
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.editScript{
+    height: 16px;
+    width: 16px;
+    display: inline-block;
 }
